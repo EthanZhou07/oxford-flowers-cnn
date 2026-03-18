@@ -1,4 +1,4 @@
-\# Oxford 102 Flowers Classification with CNN
+# Oxford 102 Flowers Classification with CNN
 
 
 
@@ -6,7 +6,7 @@ This project implements a convolutional neural network (CNN) in PyTorch for imag
 
 
 
-\## Project Goal
+## Project Goal
 
 
 
@@ -14,7 +14,7 @@ The goal of this project is to build a custom CNN baseline for multi-class flowe
 
 
 
-\## Dataset
+## Dataset
 
 
 
@@ -40,7 +40,7 @@ The dataset is automatically downloaded in the script.
 
 
 
-\## Model and Method
+## Model and Method
 
 
 
@@ -76,7 +76,7 @@ The training pipeline includes:
 
 
 
-\## Training Configuration
+## Training Configuration
 
 
 
@@ -100,7 +100,7 @@ The training pipeline includes:
 
 
 
-\## Results
+## Results
 
 
 
@@ -120,25 +120,25 @@ Final performance of the best saved model:
 
 
 
-\### Loss Curve
+### Loss Curve
 
-!\[Loss Curve](outputs/figures/loss\_curve.png)
-
-
-
-\### Accuracy Curve
-
-!\[Accuracy Curve](outputs/figures/accuracy\_curve.png)
+![Loss Curve](outputs/figures/loss\_curve.png)
 
 
 
-\### Sample Predictions
+### Accuracy Curve
 
-!\[Prediction Examples](outputs/figures/prediction\_examples.png)
+![Accuracy Curve](outputs/figures/accuracy\_curve.png)
 
 
 
-\## How to Run
+### Sample Predictions
+
+![Prediction Examples](outputs/figures/prediction\_examples.png)
+
+
+
+## How to Run
 
 
 
