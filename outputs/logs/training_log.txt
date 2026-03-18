@@ -1,0 +1,36 @@
+Oxford 102 Flowers CNN - Training Log
+__________________________________________
+Model: SimpleCNN
+Dataset: Oxford 102 Flowers
+Framework: PyTorch
+
+Dataset Summary
+___________________
+Train samples: 5732
+Validation samples: 1228
+Test samples: 1229
+Device: CPU
+
+Epoch Metrics
+_______________
+Epoch [1/10]  | Train Loss: 4.0540 | Train Acc: 0.0844 | Val Loss: 3.4543 | Val Acc: 0.1539 | Time: 797.8s
+Epoch [2/10]  | Train Loss: 3.3133 | Train Acc: 0.1800 | Val Loss: 2.9380 | Val Acc: 0.2736 | Time: 635.3s
+Epoch [3/10]  | Train Loss: 2.9164 | Train Acc: 0.2575 | Val Loss: 2.6063 | Val Acc: 0.3241 | Time: 456.9s
+Epoch [4/10]  | Train Loss: 2.5868 | Train Acc: 0.3280 | Val Loss: 2.3522 | Val Acc: 0.3909 | Time: 597.4s
+Epoch [5/10]  | Train Loss: 2.3565 | Train Acc: 0.3803 | Val Loss: 2.1933 | Val Acc: 0.4251 | Time: 540.5s
+Epoch [6/10]  | Train Loss: 2.1008 | Train Acc: 0.4396 | Val Loss: 2.0225 | Val Acc: 0.4650 | Time: 490.6s
+Epoch [7/10]  | Train Loss: 1.9231 | Train Acc: 0.4798 | Val Loss: 1.8823 | Val Acc: 0.5057 | Time: 576.2s
+Epoch [8/10]  | Train Loss: 1.7468 | Train Acc: 0.5213 | Val Loss: 1.8133 | Val Acc: 0.5212 | Time: 673.7s
+Epoch [9/10]  | Train Loss: 1.5922 | Train Acc: 0.5560 | Val Loss: 1.7619 | Val Acc: 0.5391 | Time: 1958.2s
+Epoch [10/10] | Train Loss: 1.4518 | Train Acc: 0.5855 | Val Loss: 1.7192 | Val Acc: 0.5366 | Time: 7247.0s
+
+Best Checkpoint
+_________________
+Best validation accuracy: 0.5391
+Best model saved to: best_flower_cnn.pth
+
+Final Test Performance
+__________________
+Test Loss: 1.7108
+Test Accuracy: 0.5492
+
