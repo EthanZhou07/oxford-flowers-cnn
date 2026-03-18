@@ -162,11 +162,15 @@ python src/train.py
 
 The script will:
 
-\- download the dataset automatically if needed
+\- download and prepare the Oxford Flowers dataset automatically if needed
 
-\- train the CNN model
+\- build train/validation/test dataloaders
 
-\- save the best model checkpoint
+\- initialize the CNN model
+
+\- train and validate the model
+
+\- save the best model checkpoint to `checkpoints/best_flower_cnn.pth`
 
 \- evaluate on the test set
 
