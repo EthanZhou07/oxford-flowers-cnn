@@ -164,7 +164,7 @@ The pretrained ResNet18 baseline significantly outperformed the custom CNN on th
 
 - The custom CNN achieved about **54.92%** test accuracy.
 - The pretrained ResNet18 achieved **92.35%** test accuracy.
-- This is an improvement of about **37.43 percentage points** in test accuracy.
+- This is an improvement of about **37.43%** in test accuracy.
 
 This result suggests that transfer learning is much more effective than training a small CNN from scratch for the Oxford 102 Flowers dataset. A likely reason is that the pretrained ResNet18 already learned strong general visual features from ImageNet, which transfer well to fine-grained flower classification. In contrast, the custom CNN had to learn all feature representations from scratch with a relatively limited dataset.
 
