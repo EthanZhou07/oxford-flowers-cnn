@@ -9,8 +9,7 @@ This project implements a convolutional neural network (CNN) in PyTorch for imag
 ## Project Goal
 
 
-
-The goal of this project is to build a custom CNN baseline for multi-class flower image classification and analyze its performance through training curves and prediction examples.
+The goal of this project is to build a custom CNN baseline for multi-class flower image classification on the Oxford 102 Flowers dataset, evaluate its performance through training curves and prediction examples, and compare it with a stronger transfer learning baseline based on pretrained ResNet18.
 
 
 
