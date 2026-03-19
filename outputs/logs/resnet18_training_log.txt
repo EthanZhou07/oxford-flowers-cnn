@@ -1,0 +1,42 @@
+ResNet18 Baseline Training Log
+
+Experiment
+____________
+Model: ResNet18 (pretrained)
+Training strategy: Frozen backbone, train final fully connected layer only
+Transforms: Official torchvision transforms from ResNet18_Weights.DEFAULT
+Device: cpu
+
+Dataset
+________
+Train samples: 5732
+Validation samples: 1228
+Test samples: 1229
+
+Pretrained Weights
+____________________
+Downloaded pretrained weights:
+https://download.pytorch.org/models/resnet18-f37072fd.pth
+
+Epoch Metrics
+_______________
+Epoch [1/10]  | Train Loss: 3.3620 | Train Acc: 0.3386 | Val Loss: 2.2639 | Val Acc: 0.6287 | Time: 342.7s
+Epoch [2/10]  | Train Loss: 1.6558 | Train Acc: 0.7585 | Val Loss: 1.3049 | Val Acc: 0.7989 | Time: 381.7s
+Epoch [3/10]  | Train Loss: 1.0118 | Train Acc: 0.8716 | Val Loss: 0.9317 | Val Acc: 0.8607 | Time: 329.3s
+Epoch [4/10]  | Train Loss: 0.7143 | Train Acc: 0.9091 | Val Loss: 0.7625 | Val Acc: 0.8779 | Time: 326.0s
+Epoch [5/10]  | Train Loss: 0.5508 | Train Acc: 0.9321 | Val Loss: 0.6481 | Val Acc: 0.8909 | Time: 345.5s
+Epoch [6/10]  | Train Loss: 0.4552 | Train Acc: 0.9421 | Val Loss: 0.5618 | Val Acc: 0.8860 | Time: 336.3s
+Epoch [7/10]  | Train Loss: 0.3858 | Train Acc: 0.9492 | Val Loss: 0.5126 | Val Acc: 0.9096 | Time: 332.6s
+Epoch [8/10]  | Train Loss: 0.3307 | Train Acc: 0.9569 | Val Loss: 0.4897 | Val Acc: 0.9080 | Time: 256.9s
+Epoch [9/10]  | Train Loss: 0.2932 | Train Acc: 0.9641 | Val Loss: 0.4440 | Val Acc: 0.9129 | Time: 255.4s
+Epoch [10/10] | Train Loss: 0.2583 | Train Acc: 0.9716 | Val Loss: 0.4159 | Val Acc: 0.9096 | Time: 259.7s
+
+Best validation accuracy: 0.9129
+Final test loss: 0.3885
+Final test accuracy: 0.9235
+
+Notes
+______
+- Backbone was frozen during training.
+- Only the final classification layer (fc) was optimized.
+- Best checkpoint path: checkpoints/best_resnet18.pth

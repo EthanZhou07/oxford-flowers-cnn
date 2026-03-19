@@ -137,6 +137,49 @@ Final performance of the best saved model:
 ![Prediction Examples](outputs/figures/prediction\_examples.png)
 
 
+## Baseline Comparison
+
+To evaluate the effectiveness of the custom CNN, compared it with a transfer learning baseline based on **pretrained ResNet18**.
+
+### Experimental Setup
+
+Both models were evaluated on the same Oxford 102 Flowers dataset split:
+
+- Training set: 5732 images
+- Validation set: 1228 images
+- Test set: 1229 images
+
+The custom CNN was trained from scratch, while the ResNet18 baseline used ImageNet pretrained weights, froze the backbone, and trained only the final fully connected layer.
+
+### Results
+
+| Model | Training Strategy | Best Val Acc | Test Acc | Test Loss |
+|---|---|---:|---:|---:|
+| Custom CNN | trained from scratch | 53.91% | 54.92% | 1.7108 |
+| ResNet18 (pretrained) | frozen backbone + train final fc layer only | 91.29% | 92.35% | 0.3885 |
+
+### Analysis
+
+The pretrained ResNet18 baseline significantly outperformed the custom CNN on this task.
+
+- The custom CNN achieved about **54.92%** test accuracy.
+- The pretrained ResNet18 achieved **92.35%** test accuracy.
+- This is an improvement of about **37.43 percentage points** in test accuracy.
+
+This result suggests that transfer learning is much more effective than training a small CNN from scratch for the Oxford 102 Flowers dataset. A likely reason is that the pretrained ResNet18 already learned strong general visual features from ImageNet, which transfer well to fine-grained flower classification. In contrast, the custom CNN had to learn all feature representations from scratch with a relatively limited dataset.
+
+### Value of the Custom CNN
+
+- Built a complete image classification pipeline in PyTorch from scratch.
+
+- Included data preprocessing, dataset splitting, and image normalization.
+
+- Performed training, validation, and testing on the real-world Oxford 102 Flowers dataset.
+
+- Visualized loss curves, accuracy curves, and prediction results.
+
+- Provided a clear baseline for comparison with pretrained ResNet18.
+
 
 ## How to Run
 
